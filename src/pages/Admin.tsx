@@ -221,44 +221,48 @@ const Admin = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background p-4 grid grid-cols-1 lg:grid-cols-2 gap-4" dir="rtl">
-      <Card className="w-full mx-auto">
-        <CardHeader>
-          <CardTitle>الطلبات الواردة</CardTitle>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-orange-50 to-slate-100 p-4 grid grid-cols-1 lg:grid-cols-2 gap-6" dir="rtl">
+      <Card className="w-full mx-auto shadow-xl border-2 border-orange-100">
+        <CardHeader className="bg-gradient-to-r from-orange-500 to-orange-600 text-white">
+          <CardTitle className="text-2xl">الطلبات الواردة</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="pt-6">
           <ScrollArea className="h-[70vh]">
             <div className="space-y-4">
               {orders.length === 0 ? (
-                <p>لا توجد طلبات حالياً.</p>
+                <div className="text-center py-12 text-slate-500">
+                  <p className="text-lg">لا توجد طلبات حالياً</p>
+                </div>
               ) : (
                 orders.map((order) => (
-                  <Card key={order._id}>
-                    <CardHeader>
-                      <CardTitle className="flex justify-between items-center">
-                        <span>طلب من: {order.name}</span>
-                        <Badge className={getStatusColor(order.status)}>{getStatusText(order.status)}</Badge>
+                  <Card key={order._id} className="border-2 border-slate-200 hover:border-orange-300 transition-all duration-300 hover:shadow-lg">
+                    <CardHeader className="bg-gradient-to-r from-slate-50 to-orange-50">
+                      <CardTitle className="flex justify-between items-center text-lg">
+                        <span className="text-slate-800">طلب من: {order.name}</span>
+                        <Badge className={`${getStatusColor(order.status)} text-white`}>{getStatusText(order.status)}</Badge>
                       </CardTitle>
                     </CardHeader>
-                    <CardContent>
-                      <p><strong>رقم الهاتف:</strong> {order.phone}</p>
-                      {order.address && <p><strong>العنوان:</strong> {order.address}</p>}
-                      <p><strong>إجمالي السعر:</strong> {order.totalPrice} جنيه</p>
-                      <h4 className="font-bold mt-2">الأصناف:</h4>
-                      <ul>
-                        {order.items.map((item, index) => (
-                          <li key={index}>{item.quantity} x {item.name}</li>
-                        ))}
-                      </ul>
-                      <div className="flex gap-2 pt-4">
+                    <CardContent className="space-y-3">
+                      <p className="text-slate-700"><strong className="text-slate-900">رقم الهاتف:</strong> {order.phone}</p>
+                      {order.address && <p className="text-slate-700"><strong className="text-slate-900">العنوان:</strong> {order.address}</p>}
+                      <p className="text-orange-600 text-lg"><strong className="text-slate-900">إجمالي السعر:</strong> {order.totalPrice} جنيه</p>
+                      <div className="bg-slate-50 p-3 rounded-lg">
+                        <h4 className="font-bold mb-2 text-slate-800">الأصناف:</h4>
+                        <ul className="space-y-1">
+                          {order.items.map((item, index) => (
+                            <li key={index} className="text-slate-700">• {item.quantity} x {item.name}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="flex gap-2 pt-4 flex-wrap">
                         {order.status === 'Pending' && (
-                          <Button size="sm" onClick={() => handleUpdateStatus(order._id, 'Preparing')}>بدء التحضير</Button>
+                          <Button size="sm" className="bg-blue-500 hover:bg-blue-600" onClick={() => handleUpdateStatus(order._id, 'Preparing')}>بدء التحضير</Button>
                         )}
                         {order.status === 'Preparing' && (
-                          <Button size="sm" onClick={() => handleUpdateStatus(order._id, 'Delivered')}>تم التوصيل</Button>
+                          <Button size="sm" className="bg-green-500 hover:bg-green-600" onClick={() => handleUpdateStatus(order._id, 'Delivered')}>تم التوصيل</Button>
                         )}
                         {order.status !== 'Delivered' && order.status !== 'Cancelled' && (
-                            <Button size="sm" variant="destructive" onClick={() => handleUpdateStatus(order._id, 'Cancelled')}>إلغاء الطلب</Button>
+                            <Button size="sm" variant="destructive" className="hover:bg-red-700" onClick={() => handleUpdateStatus(order._id, 'Cancelled')}>إلغاء الطلب</Button>
                         )}
                       </div>
                     </CardContent>
@@ -270,13 +274,13 @@ const Admin = () => {
         </CardContent>
       </Card>
 
-      <Card className="w-full mx-auto">
-        <CardHeader className="flex flex-row items-center justify-between">
-          <CardTitle>إدارة المنتجات</CardTitle>
+      <Card className="w-full mx-auto shadow-xl border-2 border-orange-100">
+        <CardHeader className="flex flex-row items-center justify-between bg-gradient-to-r from-orange-500 to-orange-600 text-white">
+          <CardTitle className="text-2xl">إدارة المنتجات</CardTitle>
           <div className="flex gap-2">
             <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
-                <Button onClick={openCreateDialog}>إضافة منتج جديد</Button>
+                <Button className="bg-white text-orange-600 hover:bg-orange-50" onClick={openCreateDialog}>إضافة منتج جديد</Button>
               </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
@@ -309,33 +313,33 @@ const Admin = () => {
               </DialogContent>
             </Dialog>
             <Input type="file" accept=".json" onChange={handleBulkUpload} className="hidden" id="bulk-upload-input" />
-            <Button asChild>
-              <Label htmlFor="bulk-upload-input">رفع ملف JSON</Label>
+            <Button asChild className="bg-white text-orange-600 hover:bg-orange-50">
+              <Label htmlFor="bulk-upload-input" className="cursor-pointer">رفع ملف JSON</Label>
             </Button>
           </div>
         </CardHeader>
-        <CardContent>
+        <CardContent className="pt-6">
           <ScrollArea className="h-[70vh]">
-            <Table>
+            <Table className="border">
               <TableHeader>
-                <TableRow>
-                  <TableHead>الصورة</TableHead>
-                  <TableHead>الاسم</TableHead>
-                  <TableHead>الفئة</TableHead>
-                  <TableHead>السعر</TableHead>
-                  <TableHead>الإجراءات</TableHead>
+                <TableRow className="bg-gradient-to-r from-slate-100 to-orange-50">
+                  <TableHead className="font-bold text-slate-800">الصورة</TableHead>
+                  <TableHead className="font-bold text-slate-800">الاسم</TableHead>
+                  <TableHead className="font-bold text-slate-800">الفئة</TableHead>
+                  <TableHead className="font-bold text-slate-800">السعر</TableHead>
+                  <TableHead className="font-bold text-slate-800">الإجراءات</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {menuItems.length > 0 ? (
                   menuItems.map((item) => (
-                    <TableRow key={item._id}>
+                    <TableRow key={item._id} className="hover:bg-orange-50 transition-colors">
                       <TableCell>
-                        {item.image && <img src={item.image} alt={item.name} className="h-16 w-16 object-cover rounded-md" />}
+                        {item.image && <img src={item.image} alt={item.name} className="h-16 w-16 object-cover rounded-lg shadow-md" />}
                       </TableCell>
-                      <TableCell>{item.name}</TableCell>
-                      <TableCell>{item.category}</TableCell>
-                      <TableCell>{item.price} جنيه</TableCell>
+                      <TableCell className="font-medium text-slate-800">{item.name}</TableCell>
+                      <TableCell className="text-slate-600">{item.category}</TableCell>
+                      <TableCell className="text-orange-600 font-semibold">{item.price} جنيه</TableCell>
                       <TableCell className="flex gap-2">
                         <Button variant="ghost" size="icon" onClick={() => openEditDialog(item)}>
                           <Pencil className="h-4 w-4" />
