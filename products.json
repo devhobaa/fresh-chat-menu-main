@@ -1,0 +1,184 @@
+[
+  {
+    "name": "وجبة الأرز دجاج",
+    "price": 130,
+    "category": "وجبات فردية",
+    "description": "أرز مطبوخ مع قطع دجاج مقلي مقرمش وصوص خاص من الطازج",
+    "image": "https://cdn.pixabay.com/photo/2020/12/03/08/29/fried-chicken-5798702_1280.jpg"
+  },
+  {
+    "name": "وجبة الأرز بيج ستربس",
+    "price": 145,
+    "category": "وجبات فردية",
+    "description": "أرز وسلطه كول سلو وقطع دجاج ستربس مقرمشة وصوص خاص",
+    "image": "https://cdn.pixabay.com/photo/2020/06/15/18/02/fried-chicken-5302175_1280.jpg"
+  },
+  {
+    "name": "وجبة الأرز 2 قطعة دجاج",
+    "price": 95,
+    "category": "وجبات فردية",
+    "description": "وجبة مكونة من 2 قطعة دجاج + أرز + سلطة كول سلو وصوص",
+    "image": "https://cdn.pixabay.com/photo/2021/02/01/12/31/fried-chicken-5972408_1280.jpg"
+  },
+  {
+    "name": "وجبة ستاك بوكس",
+    "price": 95,
+    "category": "وجبات فردية",
+    "description": "2 قطع دجاج مع بطاطس وخبز وكول سلو وصوص خاص",
+    "image": "https://cdn.pixabay.com/photo/2022/06/27/15/57/fried-chicken-7287784_1280.jpg"
+  },
+  {
+    "name": "وجبة دينر بوكس",
+    "price": 145,
+    "category": "وجبات فردية",
+    "description": "3 قطع دجاج + بطاطس + كول سلو + خبز + صوص",
+    "image": "https://cdn.pixabay.com/photo/2023/02/05/10/14/fried-chicken-7770018_1280.jpg"
+  },
+  {
+    "name": "وجبة الطازج الخاصة",
+    "price": 190,
+    "category": "وجبات فردية",
+    "description": "وجبة خاصة من الطازج تحتوي على تشكيلة من الدجاج والستربس وصوص الطازج المميز",
+    "image": "https://cdn.pixabay.com/photo/2015/03/26/10/01/fried-chicken-690039_1280.jpg"
+  },
+  {
+    "name": "وجبة الطازج المميزة",
+    "price": 145,
+    "category": "وجبات فردية",
+    "description": "وجبة تتضمن 2 قطعة دجاج و2 ستربس وكول سلو وخبز",
+    "image": "https://cdn.pixabay.com/photo/2019/11/11/21/35/fried-chicken-4618883_1280.jpg"
+  },
+  {
+    "name": "وجبة بيج فيلر",
+    "price": 190,
+    "category": "وجبات فردية",
+    "description": "ساندوتش بيج فيلر مع بطاطس ومشروب",
+    "image": "https://cdn.pixabay.com/photo/2018/06/28/15/24/chicken-burger-3502431_1280.jpg"
+  },
+  {
+    "name": "وجبة صاروخ الطازج",
+    "price": 130,
+    "category": "جديد من الطازج",
+    "description": "ساندوتش صاروخ الطازج مع بطاطس ومشروب",
+    "image": "https://cdn.pixabay.com/photo/2023/04/05/14/55/chicken-wrap-7901280_1280.jpg"
+  },
+  {
+    "name": "بوكس الصحاب",
+    "price": 185,
+    "category": "جديد من الطازج",
+    "description": "بوكس يحتوي على عدة أنواع من الدجاج المقلي والمقرمش مع بطاطس ومشروب",
+    "image": "https://cdn.pixabay.com/photo/2017/06/28/21/35/fried-chicken-2458307_1280.jpg"
+  },
+  {
+    "name": "تويستر",
+    "price": 75,
+    "category": "سندوتشات",
+    "description": "رول دجاج مقرمش مع خس ومايونيز داخل خبز لافاش",
+    "image": "https://cdn.pixabay.com/photo/2022/04/12/21/34/wrap-7128099_1280.jpg"
+  },
+  {
+    "name": "بيج فيلر",
+    "price": 85,
+    "category": "سندوتشات",
+    "description": "ساندوتش دجاج مقرمش كبير الحجم مع خس وطماطم وصوص الطازج",
+    "image": "https://cdn.pixabay.com/photo/2017/01/24/19/49/chicken-sandwich-2008897_1280.jpg"
+  },
+  {
+    "name": "بيج تويستر",
+    "price": 140,
+    "category": "سندوتشات",
+    "description": "رول دجاج ضخم مع صوص الطازج والخضار الطازج",
+    "image": "https://cdn.pixabay.com/photo/2021/07/14/17/44/chicken-wrap-6467343_1280.jpg"
+  },
+  {
+    "name": "بيج فيلر لحم",
+    "price": 120,
+    "category": "سندوتشات",
+    "description": "ساندوتش لحم مشوي مع الجبن والخس والطماطم وصوص خاص",
+    "image": "https://cdn.pixabay.com/photo/2016/03/05/22/08/burger-1238246_1280.jpg"
+  },
+  {
+    "name": "باكيت 9 قطع",
+    "price": 400,
+    "category": "وجبات عائلية",
+    "description": "9 قطع دجاج + بطاطس عائلية + كول سلو كبير + خبز",
+    "image": "https://cdn.pixabay.com/photo/2020/11/09/17/51/fried-chicken-5727032_1280.jpg"
+  },
+  {
+    "name": "وجبة العائلة",
+    "price": 510,
+    "category": "وجبات عائلية",
+    "description": "12 قطعة دجاج + بطاطس عائلية + كول سلو كبير + خبز + صوصات",
+    "image": "https://cdn.pixabay.com/photo/2020/09/08/15/12/fried-chicken-5552817_1280.jpg"
+  },
+  {
+    "name": "وجبة الاقتصاد",
+    "price": 610,
+    "category": "وجبات عائلية",
+    "description": "15 قطعة دجاج + بطاطس عائلية + كول سلو + خبز + صوصات",
+    "image": "https://cdn.pixabay.com/photo/2022/05/02/10/50/fried-chicken-7170143_1280.jpg"
+  },
+  {
+    "name": "وجبة السوبر العائلية",
+    "price": 765,
+    "category": "وجبات عائلية",
+    "description": "18 قطعة دجاج + بطاطس + كول سلو + 6 خبز + صوصات متنوعة",
+    "image": "https://cdn.pixabay.com/photo/2017/07/16/10/43/fried-chicken-2504654_1280.jpg"
+  },
+  {
+    "name": "وجبة الحفلات",
+    "price": 850,
+    "category": "وجبات عائلية",
+    "description": "21 قطعة دجاج + بطاطس + كول سلو + 8 خبز + صوصات متنوعة",
+    "image": "https://cdn.pixabay.com/photo/2016/06/21/16/43/fried-chicken-1473954_1280.jpg"
+  },
+  {
+    "name": "بطاطس مقلية",
+    "price": 15,
+    "category": "أصناف جانبية",
+    "description": "بطاطس مقلية مقرمشة طازجة",
+    "image": "https://cdn.pixabay.com/photo/2014/12/11/02/56/french-fries-563839_1280.jpg"
+  },
+  {
+    "name": "أرز أبيض",
+    "price": 20,
+    "category": "أصناف جانبية",
+    "description": "أرز أبيض مطهو على البخار بنكهات خفيفة",
+    "image": "https://cdn.pixabay.com/photo/2017/02/20/19/55/rice-2081837_1280.jpg"
+  },
+  {
+    "name": "كول سلو",
+    "price": 15,
+    "category": "أصناف جانبية",
+    "description": "سلطة كول سلو بطعم الطازج الأصلي",
+    "image": "https://cdn.pixabay.com/photo/2018/06/09/18/28/coleslaw-3467439_1280.jpg"
+  },
+  {
+    "name": "صوص الثوم",
+    "price": 15,
+    "category": "أصناف جانبية",
+    "description": "صوص الثوم الكريمي اللذيذ",
+    "image": "https://cdn.pixabay.com/photo/2020/08/28/10/36/garlic-sauce-5521901_1280.jpg"
+  },
+  {
+    "name": "صوص تشيدر",
+    "price": 30,
+    "category": "أصناف جانبية",
+    "description": "صوص جبن تشيدر غني ولذيذ",
+    "image": "https://cdn.pixabay.com/photo/2020/09/08/13/32/cheese-sauce-5552472_1280.jpg"
+  },
+  {
+    "name": "ناجتس 7 قطع مع صوص",
+    "price": 50,
+    "category": "وجبات سناكس",
+    "description": "قطع دجاج ناجتس مقرمشة مع صوص الغمس",
+    "image": "https://cdn.pixabay.com/photo/2019/07/09/17/07/nuggets-4326254_1280.jpg"
+  },
+  {
+    "name": "ناجتس 10 قطع مع صوص",
+    "price": 60,
+    "category": "وجبات سناكس",
+    "description": "10 قطع ناجتس مع صوص غمس لذيذ",
+    "image": "https://cdn.pixabay.com/photo/2019/07/09/17/07/nuggets-4326254_1280.jpg"
+  }
+]
